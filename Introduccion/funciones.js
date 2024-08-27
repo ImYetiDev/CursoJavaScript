@@ -2,7 +2,6 @@
 // function saludar() {
 //     console.log('Hola')
 // }
-
 // saludar()
 
 //Forma 2 - Funciones anónimas
@@ -11,5 +10,5 @@
 // }
 
 //Forma 3 - Arrow functions
-const saludo = () => { console.log('Hola') }
+const saludo = () => console.log('Hola')
 saludo()
