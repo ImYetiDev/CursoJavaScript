@@ -14,3 +14,15 @@ const persona = {
         alert('Hola')
     }
 }
+
+//Acceder a los valores de un objeto
+console.log(persona.nombre)
+console.log(persona.subscipciones.correo)
+
+//Agregar una propiedad a un objeto
+persona.tel = '123456789'
+console.log(persona.tel)
+
+//Eliminar una propiedad de un objeto
+delete persona.tel
+console.log(persona.tel)
