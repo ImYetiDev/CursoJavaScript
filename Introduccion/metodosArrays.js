@@ -41,8 +41,29 @@ const array3 = array1.concat(array2)
 console.log(array3) // ['a', 'b', 'c', 'd', 'e', 'f']
 
 /*
-    Metodo push()
+    Metodo push() mas comun
     -Agrega un elemento al final del array.
 */
 colores.push('violeta')
 console.log(colores) // ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'rosa', 'violeta']
+
+/*
+    Metodo pop()
+    -Elimina el último elemento del array.
+*/
+colores.pop()
+console.log(colores) // ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'rosa']
+
+/*
+    Metodo shift()
+    -Elimina el primer elemento del array.
+*/
+colores.shift()
+console.log(colores) // ['verde', 'azul', 'amarillo', 'naranja', 'rosa']
+
+/*
+    Metodo unshift()
+    -Agrega un elemento al principio del array.
+*/
+colores.unshift('rojo')
+console.log(colores) // ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'rosa']
