@@ -70,9 +70,22 @@ dias.unshift('Yeti')
 console.log(dias) // ['Yeti', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
 
 /*
-    Metodo slice()
+    Metodo splice()
     -Permite insertar elementos en una posición específica del array.
     -1er parametro: posición donde se insertará el elemento.
-    -2do parametro: si queremos eliminar algún elemento.
-    -Resto de parametros: elementos que queremos insertar.
+    -2do parametro: cantidad de elementos a eliminar.
+    -Resto de parametros: elementos a insertar.
 */
+const amigos = ['Juan', 'Pedro', 'Maria', 'Ana']
+amigos.splice(1, 2, 'Carlos') // Elimina a Pedro y Maria e inserta a Carlos en la posición 1
+console.log(amigos) // ['Juan', 'Carlos', 'Ana']
+
+/*
+    Metodo slice()
+    -Crea un nuevo array a partir de un array existente.
+    -1er parametro: posición de inicio.
+    -2do parametro: posición de fin.
+*/
+const frutas = ['manzana', 'pera', 'uva', 'sandia', 'melon', 'platano']
+const frutasSeleccionadas = frutas.slice(0,3) // Crea un nuevo array con las frutas manzana, pera y uva
+console.log(frutasSeleccionadas) // ['manzana', 'pera', 'uva']
