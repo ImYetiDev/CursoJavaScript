@@ -58,12 +58,21 @@ console.log(colores) // ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'rosa']
     Metodo shift()
     -Elimina el primer elemento del array.
 */
-colores.shift()
-console.log(colores) // ['verde', 'azul', 'amarillo', 'naranja', 'rosa']
+const dias = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+console.log(dias) // ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+const diaEliminado = dias.shift() // retorna el elemento eliminado 'lunes'
 
 /*
     Metodo unshift()
     -Agrega un elemento al principio del array.
 */
-colores.unshift('rojo')
-console.log(colores) // ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'rosa']
+dias.unshift('Yeti')
+console.log(dias) // ['Yeti', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+
+/*
+    Metodo slice()
+    -Permite insertar elementos en una posición específica del array.
+    -1er parametro: posición donde se insertará el elemento.
+    -2do parametro: si queremos eliminar algún elemento.
+    -Resto de parametros: elementos que queremos insertar.
+*/
