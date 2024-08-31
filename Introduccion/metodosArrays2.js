@@ -35,3 +35,12 @@ const resultado = nombres.find((nombre) =>{ //Por cada nombre del array ejecuta 
     } 
 })
 console.log(resultado) //
+
+/*
+    Metodo map()
+    -Crea un nuevo array con los resultados de la función.
+*/
+const nombresMayuscula = nombres.map((nombre) => {
+    return nombre.toUpperCase()
+})
+console.log(nombresMayuscula) // ["JUAN", "PEDRO", "MARIA", "ANA"]
