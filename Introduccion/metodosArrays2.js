@@ -51,3 +51,41 @@ console.log(nombresMayuscula) // ["JUAN", "PEDRO", "MARIA", "ANA"]/
     -La diferencia de filter es que devuelve un array con los elementos que cumplan la condición.
 */
 
+const nombresConA = nombres.filter((nombre) => {
+    return nombre.includes('a')
+})
+console.log(nombresConA) // ["Maria", "Ana"]
+
+const nombre4Letras = nombres.filter((nombre) => {
+    return nombre.length === 4
+})
+console.log(nombre4Letras) // ["Juan"]
+
+/*
+    Metodo includes()
+    -Determina si un array incluye un determinado elemento.
+    -Devuelve true o false.
+*/
+console.log(nombres.includes('Juan')) // true
+console.log(nombres.includes('Carlos')) // false
+
+/*
+    Metodo every()
+    -Determina si todos los elementos del array cumplen con la condición.
+    -Devuelve true o false.
+*/
+const usuarios = ['Juan', 'Pedro', 'Maria', 'Ana', 4]
+const resultadoEvery = usuarios.every((usuario) => {
+    return typeof usuario === 'string'
+})
+console.log(`Todos los numeros son validos: ${resultadoEvery}`) // false
+
+/*
+    Metodo some()
+    -Determina si algún elemento del array cumple con la condición.
+    -Devuelve true o false.
+*/
+const resultadoSome = usuarios.some((usuario) => {
+    return typeof usuario !== 'string'
+})
+console.log(`Algun numero es valido: ${resultadoSome}`) // true
