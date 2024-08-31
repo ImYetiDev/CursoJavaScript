@@ -43,4 +43,11 @@ console.log(resultado) //
 const nombresMayuscula = nombres.map((nombre) => {
     return nombre.toUpperCase()
 })
-console.log(nombresMayuscula) // ["JUAN", "PEDRO", "MARIA", "ANA"]
+console.log(nombresMayuscula) // ["JUAN", "PEDRO", "MARIA", "ANA"]/
+
+/*
+    Metodo filter()
+    -Crea un nuevo array con los elementos que cumplan la condición.
+    -La diferencia de filter es que devuelve un array con los elementos que cumplan la condición.
+*/
+
