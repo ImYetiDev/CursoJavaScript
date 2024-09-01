@@ -27,3 +27,19 @@ console.log(frase.slice(index)) // Juan
 console.log(frase.slice(1,4)) // ola
 const lastIndexOf = frase.lastIndexOf('n')
 console.log(frase.slice(index, lastIndexOf + 1)) // Juan
+
+/*
+    Metodo replace()
+    -Reemplaza un valor por otro en un string.
+    -1er parametro: valor a reemplazar.
+    -2do parametro: valor nuevo.
+*/
+const texto = 'Hola, soy Juan'
+console.log(texto.replace('Juan', 'Pedro')) // Hola, soy Pedro
+console.log(texto.replace('o', 'a')) // Hala, soy Juan
+
+/*
+    Metodo split() - Convierte un string en un array.
+    -Tenemos que especificar donde cortar el string.
+    -Recibe un parametro opcional que es el separador.
+*/
