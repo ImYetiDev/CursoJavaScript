@@ -31,3 +31,30 @@ console.log(parseFloat(stringDecimal)) // 3.1416
 
 console.log(Math.random()) // 0.123456789
 console.log(Math.random()) // 0.987654321
+
+/*
+    Math.floor()
+    -Redondea un numero hacia abajo.
+*/
+console.log(Math.floor(3.9)) // 3
+console.log(Math.floor(3.1)) // 3
+
+/*
+    Math.ceil()
+    -Redondea un numero hacia arriba.
+*/
+console.log(Math.ceil(3.9)) // 4
+console.log(Math.ceil(3.1)) // 4
+
+/*
+    Math.round()
+    -Redondea un numero al entero mas cercano.
+*/
+console.log(Math.round(3.9)) // 4
+console.log(Math.round(3.1)) // 3
+
+/*
+    Ejemplo numero aleatorio entre 1 y 100.
+*/
+const numeroAleatorio = Math.random()
+console.log(Math.floor(numeroAleatorio * 101)) // 1 - 100
