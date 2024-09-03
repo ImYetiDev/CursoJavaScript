@@ -39,7 +39,21 @@ console.log(texto.replace('Juan', 'Pedro')) // Hola, soy Pedro
 console.log(texto.replace('o', 'a')) // Hala, soy Juan
 
 /*
-    Metodo split() - Convierte un string en un array.
-    -Tenemos que especificar donde cortar el string.
-    -Recibe un parametro opcional que es el separador.
+    Metodo split()
+    -Divide un string en un array de strings.
+    -Tenemos que especificar donde se va a dividir.
+    -Recibe un parametro: el separador.
 */
+
+const array = texto.split(' ')
+const numero = 123-456-7890
+console.log(array) // ['Hola,', 'soy', 'Juan']
+console.log(numero.split('-')) // ['123', '456', '7890']
+
+/*
+    Metodo toUpperCase() y toLowerCase()
+    -Convierte un string a mayusculas o minusculas.
+*/
+
+console.log(texto.toUpperCase()) // HOLA, SOY JUAN
+console.log(texto.toLowerCase()) // hola, soy juan
