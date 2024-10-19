@@ -33,3 +33,24 @@ const registrarUsuario = (nombre, edad, ...datosAdicionales) => {
     console.log(edad)
     console.log(datosAdicionales)
 }
+
+registrarUsuario('Juan', 30, 'admin', '1234', ' [email protected]')
+// Juan 30 ['admin', '1234', ' [email protected]']
+
+
+
+/*
+    Destructuracion de objetos
+    Nos permite extraer propiedades de un objeto y asignarlas a variables
+*/
+
+const amigos = ['Juan', 'Pedro', 'Luis']
+const primerAmigo = amigos[0] // Juan
+const segundoAmigo = amigos[1] // Pedro
+const tercerAmigo = amigos[2] // Esta es la forma tradicional
+
+const [amigo1, amigo2, amigo3] = amigos // Esta es la forma con destructuracion
+console.log(amigo1) // Juan
+console.log(amigo2) // Pedro
+console.log(amigo3) // Luis
+
