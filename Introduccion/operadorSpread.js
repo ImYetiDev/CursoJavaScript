@@ -54,3 +54,21 @@ console.log(amigo1) // Juan
 console.log(amigo2) // Pedro
 console.log(amigo3) // Luis
 
+const persona = {
+    nombre: 'Juan',
+    edad: 30,
+    pais: 'Mexico'
+}
+
+//En el caso del objeto se debe llamar la variable igual que la propiedad
+const { nombre, edad, pais } = persona
+console.log(nombre) // Juan
+console.log(edad) // 30
+console.log(pais) // Mexico
+
+const mostrarEdad = (nombre, edad) => {
+    console.log(`${nombre} tiene ${edad} años`)
+}
+
+mostrarEdad(persona.nombre, persona.edad) // Juan tiene 30 años la forma tradicional
+mostrarEdad(persona) // Juan tiene 30 años la forma con destructuracion pasa el objeto completo
