@@ -66,7 +66,7 @@ console.log(nombre) // Juan
 console.log(edad) // 30
 console.log(pais) // Mexico
 
-const mostrarEdad = (nombre, edad) => {
+const mostrarEdad = ({nombre, edad}) => {
     console.log(`${nombre} tiene ${edad} años`)
 }
 
