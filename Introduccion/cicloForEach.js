@@ -41,3 +41,16 @@ console.log(persona) // {nombre: "Nuevo valor", edad: "Nuevo valor", correo: "Nu
     Arreglos, cadenas de texto, map, set, arguments, listas de nodos etc.
 */
 
+const etiquetas = document.head.children;
+for(etiqueta of etiquetas){
+    console.log(etiqueta);
+} // Devuelve una lista de las etiquetas del head del documento HTML (HTMLCollection)
+
+for (elemento of etiquetas){
+    console.log(elemento.tagName);
+    console.log(elemento) //Devuelve la etiqueta HTML
+} // Devuelve el nombre de las etiquetas del head del documento HTML (HTMLCollection)
+
+console.log([...etiquetas]); // Devuelve un array con las etiquas del head del documento HTML (Array)
+
+[...etiquetas].forEach(etiqueta => console.log(etiqueta)) // Devuelve una lista de las etiquetas del head del documento HTML (Array)
