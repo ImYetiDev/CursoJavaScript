@@ -2,6 +2,8 @@ const nombres = ['Arturo', 'Andres', 'Alejandro', 'Ana','Robertp', 'Andrea', ]
 
 for (let i = 0; i < nombres.length; i++) {
     if (nombres[i][0] !== 'A'){
+        console.log('No se imprimen los nombres que no empiezan con A');
+        console.log(nombres[i]);
         break;
     }
     console.log(nombres[i]);
