@@ -13,5 +13,8 @@ class Usuario{
     constructor(nombre, apellido){
         this.nombre = nombre;
         this.apellido = apellido;
+        console.log('Hola ' + this.nombre + ' ' + this.apellido);
     }
 }
+
+new Usuario('Juan', 'Perez'); //Hola Juan Perez

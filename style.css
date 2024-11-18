@@ -12,3 +12,12 @@ body{
 header{
     background-color: red;
 }
+
+main{
+    background-color: green;
+    padding: 10px;
+}
+
+section{
+    background-color: rgb(10, 149, 173);
+}
